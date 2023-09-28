@@ -1,0 +1,185 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    
+    <div class="header">
+        <h2>BUSINESS COMPASS</h2>
+    </div>
+
+
+    <div class="detail">
+        <u>harnessing AI</u> 
+        to shape the future 
+        of <u>business decisions</u>        
+    </div>
+
+    <div class="stockpredprocedure">
+        <br><br>
+        <h1>How does Business Compass work?</h1> 
+        <br><br>
+        <h2>Stock Prediction Procedure</h2> 
+        <div class="stockpred">
+            <div class="step">
+                <div class="stepimg">
+                    <img src="{{url_for("static", filename = "images/SPflow1.png")}}" alt="SP1">
+                </div>
+                <div class="stepinfo">
+                    Historical stock prices of publicly-traded stocks
+                </div>
+                
+            </div>
+    
+            <div class="arrow">
+    
+            </div>
+    
+            <div class="step">
+                <div class="stepimg">
+                    <img src="{{url_for("static", filename = "images/SPflow2.png")}}" alt="SP2">
+                </div>
+                <div class="stepinfo">
+                    Deep Learning and Mathematical model (Facebook Prophet)
+                </div>
+            </div>
+    
+            <div class="arrow">
+                
+            </div>
+    
+            <div class="step">
+                <div class="stepimg">
+                    <img src="{{url_for("static", filename = "images/SPflow3.png")}}" alt="SP3">
+                </div>
+                <div class="stepinfo">
+                    <p>Predict prices for the stock & date users specify through graph with real vs predicted price comparison</p>
+                </div>
+            </div>
+    
+        
+        </div>
+
+        <h2>Business Case Solver</h2> 
+        <div class="stockpred">
+            <div class="step">
+                <div class="stepimg">
+                    <img src="{{url_for("static", filename = "images/BSflow1.png")}}" alt="SP1">
+                </div>
+                <div class="stepinfo">
+                    Users input specific business scenarios/problems
+                </div>
+                
+            </div>
+    
+            <div class="arrow">
+    
+            </div>
+    
+            <div class="step">
+                <div class="stepimg">
+                    <img src="{{url_for("static", filename = "images/BSflow2.png")}}" alt="SP2">
+                </div>
+                <div class="stepinfo">
+                    Large Language Model (GPT-3)
+                </div>
+            </div>
+    
+            <div class="arrow">
+                
+            </div>
+    
+            <div class="step">
+                <div class="stepimg">
+                    <img src="{{url_for("static", filename = "images/BSflow3.png")}}" alt="SP3">
+                </div>
+                <div class="stepinfo">
+                    <p>Generate tailored  hypotheses, solutions, and action plans</p>
+                </div>
+            </div>
+    
+        
+        </div>
+    </div>
+
+ 
+    
+
+
+    <div class="customer">
+        <br><br>
+        <h1>Business Compass is for you, if you are:</h2>  
+        <div class="wrapper">
+            <div class="info">
+                <div class="personimg">
+                    <img src="static/images/worker.png" alt="">
+                </div>
+                <div class="role">
+                    <p>Data-driven<br>Investors & Traders</p>
+                </div>
+                <div class="describe">
+                    <p>Our Stock Prediction Model equips you with valuable forecast to optimize your investment strategies</p>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="personimg">
+                    <img src="static/images/leader.png" alt="">
+                </div>
+                <div class="role">
+                    <p>Transformational<br>Business Owners </p>
+                </div>
+                <div class="describe">
+                    <p>Our AI-powered tool offers tailored solutions to address your business challenges, helping you adapt and transform in today's ever-changing market landscape</p>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="personimg">
+                    <img src="static/images/education.png" alt="">
+                </div>
+                <div class="role">
+                    <p>Students and<br> Financial Enthusiasts</p>
+                </div>
+                <div class="describe">
+                    <p>Business Compass fuels your passion for exploring the world of investment and business. Sharpen your financial and business acumen with us!</p>
+                </div>
+            </div>
+        </div>     
+    </div>
+
+    <div class="creator">
+        
+        <div class="thyinfo">
+            <div class="headerthy">
+                <h1>From Creator <img class="gifimg" src="{{ url_for('static', filename='images/star.gif')}}" alt="gifimg"></h1>
+                
+            </div>
+            
+            <div class="name">
+                Thy Nguyen
+                <br>
+                Senior at DePauw University
+            </div>
+            <div class="horizontalbar"></div>
+            <div class="speech">
+                <p>Hello, I'm Thy Nguyen, the driving force behind Business Compass. With a commitment to harnessing the potential of AI, I embarked on the creation of Business Compass, a platform designed to demystify the complexities of investment and business strategies.
+                    <br> <br>
+                    My fervor for this project is rooted in the belief that everyone, from students to seasoned financial enthusiasts, deserves access to cutting-edge technologies that can enhance their financial acumen. From my academic pursuits in economics to my professional experiences in investment analysis and business strategy, I've seen how the right insights can drive success.
+                    <br> <br>
+                    Business Compass is more than just a project; it's a testament to my dedication to fostering financial literacy and enabling users to navigate the intricate landscape of investments and business challenges. 
+                    <br> <br>
+                    Welcome to Business Compass, where your financial journey is our priority!</p>
+            </div>
+        </div>
+        
+
+        <div class="imgcreator">
+            <img src="{{ url_for('static', filename='images/MinhThy.jpeg') }}" alt="thyimg">
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+

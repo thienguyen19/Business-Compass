@@ -1,0 +1,240 @@
+body{
+    background-color: #d7a8e9;
+}
+
+
+.header {
+    font-size: 50px; /* Adjust the font size as needed */
+    color: aliceblue;
+    font-family: 'Caprasimo', cursive;
+    text-align: center;
+}
+
+
+.instruction {
+    display: flex;
+    flex-wrap: wrap; /* Wrap to the next line if needed */
+    align-items: flex-start; /* Align items to the top of each column */
+}
+
+#major{
+    margin: 3%;
+    width: 400px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: purple;
+}
+
+
+.bubble {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 600px;
+    height:300px;
+    background: #f0e7ec;
+    border-radius: 60px;
+    padding: 24px;
+    margin-left: 2cm;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10%;
+  }
+  .bubble .h1{
+    margin-top: 10%;
+    color: #000000;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  .bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #f0e7ec;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #f0e7ec;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+  }
+
+  .rules {
+    /* Styles for the rules */
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    flex: 1; /* Allow the rules div to grow and take available space */
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Add some additional styling to the text inside the cloudy thought bubble */
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-form select, .feedback-form input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.emotion-feedback {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.emotion-feedback label {
+    flex: 1;
+    text-align: center;
+}
+
+output {
+    display: block;
+    font-weight: bold;
+}
+
+
+/* Create a class for the feedback rating container */
+.feedbackform{
+    width: 800px;
+    margin: auto;
+    /* color: #fff; */
+}
+.rating-container {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+  }
+
+.emoji {
+    display: inline-block;
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    background-size: cover;
+}
+.emoji:hover{
+    scale: 1.1;
+}
+
+.sad {
+    background-image: url('images/sad.png'); /* Replace with your sad face image */
+}
+
+.happy {
+    background-image: url('images/happy.png'); /* Replace with your happy face image */
+}
+
+.lovely {
+    background-image: url('images/star.png'); /* Replace with your lovely face image */
+}
+
+
+
+
+
+
+  
+  /* Create a class for the individual rating circle */
+.rating-circle {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    background-color: #ccc; /* Default color for unselected circles */
+    border-radius: 50%; /* Make the circles round */
+    margin: 0 5px; /* Adjust the spacing between circles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Show pointer cursor on hover for interaction */
+}
+
+.rating-circle:hover {
+    scale: 1.1;
+    background-color: #d7a8e9;
+}
+
+/* Style the selected circle */
+.rating-circle.selected {
+    background-color: purple; /* Change the color of the selected circle */
+    color: #fff; /* Change the text color of the selected circle */
+    font-weight: bold;
+}
+
+.rating-circle-1 {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    background-color: #ccc; /* Default color for unselected circles */
+    border-radius: 50%; /* Make the circles round */
+    margin: 0 5px; /* Adjust the spacing between circles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Show pointer cursor on hover for interaction */
+}
+
+.rating-circle-1:hover {
+    scale: 1.1;
+    background-color: #d7a8e9;
+}
+
+/* Style the selected circle */
+.rating-circle-1.selected {
+    background-color: purple; /* Change the color of the selected circle */
+    color: #fff; /* Change the text color of the selected circle */
+    font-weight: bold;
+}
+
+
+
+.question{
+    background-color: #f0e7ec;
+    padding: 5%;
+    border-radius: 30px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textas{
+    font-size: 15px;
+}
+
+#submitbut{
+    height: 50px;
+    width: 80%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0e7ec;
+    border-radius: 30px;
+    margin-left: 10%;
+}
+
+#submitbut:hover{
+    background-color: purple;
+    color: white;
+}
+
+
+#opinion{
+    width: 700px;
+    height: 200px;
+    font-size: 20px;
+}

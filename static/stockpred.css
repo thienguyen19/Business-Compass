@@ -1,0 +1,123 @@
+/* Center the form and results */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.container h1 {
+    font-size: 80px; /* Adjust the font size as needed */
+    color: aliceblue;
+    font-family: 'Caprasimo', cursive;
+    position: relative;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container2 h2 {
+    font-size: 60px; /* Adjust the font size as needed */
+    color: aliceblue;
+    font-family: 'Caprasimo', cursive;
+    position: relative;
+}
+
+
+/* Style the title */
+h1 {
+    margin-top: 0;
+    text-align: center; /* Center-align the title */
+}
+
+/* ****************Style the form****************** */
+form {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 50px;
+    padding-right: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Style the input field */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown items */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Style the dropdown items on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown when the input field is in focus */
+.dropdown input[type="text"]:focus + .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* Style error message */
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+
+/* Style the results container */
+.info {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+/* Style the image */
+#plot {
+    margin-top: 20px;
+    max-width: 80%;
+    height: auto;
+}

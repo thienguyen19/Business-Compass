@@ -1,0 +1,259 @@
+.header {
+    width: 100%;
+    height: 800px;
+    background-image: url('/static/images/1.png'); /* Update the path as needed */
+    background-size: cover; /* Adjust background size to cover the entire div */
+    display: flex; /* Use flexbox to center the content vertically */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    color: #fff; /* Text color */
+    font-family: 'Caprasimo', cursive;
+    text-align: center; /* Center the text horizontally */
+}
+
+.header h2 {
+    font-size: 80px; /* Adjust the font size as needed */
+    color: aliceblue;
+    font-family: 'Caprasimo', cursive;
+    position: relative;
+}
+
+.detail {
+    width: 100%;
+    height: 800px;
+    /* background-image: url('/static/2.png');  */
+    display: flex; /* Use flexbox to center the content vertically */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    color: #fff; /* Text color */
+    font-size: 80px; /* Adjust the font size as needed */
+    font-family: 'Caprasimo', cursive;
+    text-align: center; 
+}
+
+
+.customer {
+    text-align: center;
+    color: #f1f1f1;
+    width: 100%;
+}
+.customer h1{
+    
+    font-size: 50px; /* Adjust the font size as needed */
+    color: aliceblue;
+    font-family: 'Caprasimo', cursive;
+    position: relative;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.info {
+    text-align: center;
+    width: 33%;
+    height: 550px;
+    /* border: 2px solid #a5bbff; */
+    box-shadow: #585656 2cm;
+}
+
+
+
+.personimg {
+    width: fit-content;
+    border: 2px solid transparent;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: auto;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+}
+
+.personimg:hover {
+    transform: scale(1.1); 
+}
+
+.role {
+    font-weight: bold; /* Make the role text bold */
+    margin-top: 5px;
+    font-size: 30px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.describe {
+    margin: auto;
+    width: 80%;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Creator info */
+
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 30px;
+    font-family: 'Caprasimo', cursive;
+    background-image: url(images/background2.png);
+    background-size: cover;
+}
+  
+  .imgcreator {
+    flex: 1;
+    text-align: center; 
+    margin: auto;
+    /* border: 2px solid #fff; */
+  }
+  
+  .imgcreator img {
+    width: 50%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: 15%;
+    border-radius: 3%;
+    /* border: 2px solid #ccc; */
+  }
+
+.headerthy{
+    position: flex;
+
+}
+
+.headerthy h1 {
+    flex: 1; /* Allow the heading to grow and take available space */
+    margin-right: 20px; /* Add spacing between heading and image if desired */
+}
+
+.gifimg {
+    width: 10%;
+    height: 12%;
+}
+  
+.thyinfo {
+    flex: 1; /* Take up available space */
+    padding: 10px; /* Add padding for spacing */
+}
+.thyinfo h1{
+    margin-left: 10%;
+}
+
+.horizontalbar {
+    height: 5px; /* Set the height of the bar as needed */
+    width: 425px;
+    margin-left: 10%;
+    background-color: rgb(185, 110, 235); /* Set the background color to yellow */
+}
+.name {
+    font-weight:900; /* Make the name bold if desired */
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10%;
+}
+
+.speech {
+/* Add styles for the speech information if needed */
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b7b0b0;
+    margin-left: 10%;
+    width: 100%;
+    text-align: justify;
+/* border: 1px solid white; */
+}
+
+
+/* Decorate Stock Prediction */
+.stockpredprocedure{
+    background-image: url('/static/images/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stockpredprocedure h1{
+    font-size: 60px; /* Adjust the font size as needed */
+    color: aliceblue;
+    font-family: 'Caprasimo', cursive;
+    position: relative;
+    text-align: center;
+}
+
+.stockpredprocedure h2{
+    font-size: 50px; /* Adjust the font size as needed */
+    color: aliceblue;
+    font-family: 'Caprasimo', cursive;
+    position: relative;
+    text-align: center;
+}
+.stockpred {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* justify-content: space-between; */
+}
+
+
+.step {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 5%;
+
+}
+
+.stepimg {
+    width: fit-content; /* Adjust as needed */
+    height: fit-content; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stepimg img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.arrow {
+    position: relative;
+    width: 100px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background-color: white; /* Arrow bar color */
+    margin-bottom: 10%;
+}
+
+.arrow::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust as needed to position the pointer */
+    right: -40px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid white; /* Adjust as needed for pointer size and color */
+}
+
+.stepinfo {
+    text-align: center;
+    margin-top: 10px; /* Adjust as needed */
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+    line-height: 2;
+}

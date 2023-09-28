@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Compass</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/stockpred">STOCK PREDICTION</a></li>
+            <li><a href="/casesolver">BUSINESS CASE SOLVER</a></li>
+            <li><a href="/feedback">FEEDBACK</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <!-- Your page content goes here -->
+        {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        <div>
+            Email: minhthy_2024@depauw.edu 
+        </div>
+        <div>
+            LinkedIn: https://www.linkedin.com/in/thynguyen198/ 
+        </div>
+        <div>
+            Github: https://github.com/thienguyen19/Business-Compass
+        </div>
+        
+    </div>
+</body>
+</html>

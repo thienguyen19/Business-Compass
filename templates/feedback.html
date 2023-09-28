@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='feedback.css') }}">
+    
+
+    <div class="header">
+        <h1>Feedback Page</h1>
+    </div>
+    <div class="instruction">
+        <div class="bubble bubble-bottom-left" contenteditable>
+            <div class="h1">Your thoughts and experiences </div> 
+            <div class="h1"> MATTER 🥰</div>
+        </div>
+        <div class="rules">
+            We value your feedback as it helps us improve our platform and tailor it to your needs. <br><br>
+            Your feedback will remain completely anonymous. <br><br>
+            Thank you for helping us make your financial and business journey even better 😍 !
+        </div>
+    </div>
+    
+
+    <div class="feedbackform">
+        <form action="/submit_feedback" method="post">
+            <div class="question">
+                <label for="major">What is your current major/career ?</label> <br>
+                <select id="major" name="major">
+                    {% for code,major in majors.items()%}
+                    <option value="{{code}}">{{major}}</option>
+                    {% endfor %}
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <br>
+
+            <div class="question">
+                <label for="emotion">Are you satisfied with our platform?</label>
+                <div id="emotion" class="emotion-feedback">
+                    <label><span class="emoji sad"></span> <br><input type="radio" name="emotion" value="Sad"></label>
+                    <label><span class="emoji happy"></span><br><input type="radio" name="emotion" value="Happy"></label>
+                    <label><span class="emoji lovely"></span><br><input type="radio" name="emotion" value="Lovely"></label>
+                </div>
+            </div>
+            <br>
+            
+            <div class="question">
+                <label for="score">How likely are you to recommend our application?</label>
+                <div class="rating-container">
+                    {% for i in range(1,11) %}
+                    <div class="rating-circle" data-score="{{ i }}">{{ i }}</div>
+                    {% endfor %}
+                </div>
+                <p class="textas">Will not recommend  
+                   {% for i in range(1,40)%}
+                   &nbsp
+                   {% endfor %}
+                Will definitely recommend!</p>
+            </div>
+            
+            <br>
+
+            <div class="question">
+                <label for="score1">How helpful is Business Compass in shaping your financial and business-related decisions?</label>
+                <div class="rating-container">
+                    {% for i in range(1,11) %}
+                    <div class="rating-circle-1" data-score="{{ i }}">{{ i }}</div>
+                    {% endfor %}
+                </div>
+                <p class="textas">Not Helpful  
+                    {% for i in range(1,60)%}
+                    &nbsp
+                    {% endfor %}
+                Extremely Helpful</p>
+            </div>
+            <br>
+
+            <div class="question">
+                <label for="opinion">What is the one thing you wish Business Compass could do that it doesn't already?</label> <br>
+                <input id = "opinion" name="opinion" type="text">
+            </div>
+            <br>
+
+            <div class="question">
+                <label for="opinion2">What is the most difficult/confusing part of using our app?</label> <br>
+                <input id = "opinion" name="opinion2" type="text">
+            </div>
+            <br>
+
+
+            <input id="submitbut" type="submit" value="Submit">
+        </form>
+        <script src="{{ url_for('static', filename='feedback.js') }}"></script>
+    </div>
+    
+
+
+{% endblock %}

@@ -1,0 +1,68 @@
+/* Reset some default styles */
+
+
+body {
+    position: relative; /* Make the body a positioning context */
+    background-color: #01204c;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* Style for the horizontal navigation menu */
+.navbar {
+    /* background-color: rgba(0, 0, 0, 0.5); Add a semi-transparent background */
+    color: #fff;
+    background-color: #01204c;
+    position: block; /* Position the navigation absolutely */
+    /* margin-top: 2%; */
+    width: 100%; /* Make it full-width */
+}
+
+.navbar ul {
+    background-color: #01204c;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the menu horizontally */
+}
+
+.navbar ul li {
+    padding: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s; /* Add a smooth transition for background color */
+    font-size: 20pt;
+    padding: 5px 10px; /* Add some padding to create a box around the text */
+    border: 1px solid transparent; /* Add a transparent border initially */
+    font-family: 'Caprasimo', cursive;
+}
+
+.navbar ul li a:hover {
+    background-color: #b999f9;
+    border: 1px solid #fff; /* Add a border around the text on hover */
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white; /* Optionally, set the text color to white for better visibility */
+    text-align: center; /* Center-align the content in the footer */
+    padding: 20px; /* Add some padding for better spacing */
+    margin-top: 20px;
+}
+
+
+.footer div {
+    margin: 10px 0; /* Add margin to separate the content within the footer */
+    font-family: 'Montserrat', sans-serif;
+}
+

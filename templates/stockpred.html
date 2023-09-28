@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='stockpred.css') }}">
+    <!-- <script src="{{ url_for('static', filename='dropdown.js') }}"></script> -->
+    
+    
+    <div class="container">
+        <h1>Stock Prediction</h1>
+        <form action="{{ url_for('stockpred') }}" method="post">
+      
+            <div class="dropdown">
+                <label for="stock_symbol">Stock Symbol:</label>
+                <input type="text" id="stock_symbol" name="stock_symbol" oninput="filterStickers()" placeholder="Exp. AAPL" required> 
+                <!-- <div class="dropdown-content" id="stock_list">
+                    {% for sticker in listofstickers %}
+                    <a href="#" onclick="selectSticker(this)">{{sticker}}</a>
+                    {% endfor %}
+                </div> -->
+            </div>
+
+            <label for="startday">Start Day (YYYY-MM-DD):</label>
+            <input type="date" id="startday" name="startday" required>
+            
+            <label for="endday">End Day (YYYY-MM-DD):</label>
+            <input type="date" id="endday" name="endday" required>
+
+            <input type="submit" value="Predict">
+        </form>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+    </div>
+    
+    {% if ticker %}
+    <div class="container2">
+        <h2>Stock Prediction Results</h2>
+        <div class="info">
+            <p>Predicted stock prices for {{ ticker }} from {{ startday }} to {{ endday }}:</p>
+            <p>{{ predictions }}</p>
+        </div>
+        <img id="plot" src="data:image/png;base64,{{ image_data }}" alt="Plot">
+    </div>
+    {% endif %}
+{% endblock %}

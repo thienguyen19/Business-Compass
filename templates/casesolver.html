@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='casesolver.css') }}">
+
+    <div class="container">
+        <div class="example">
+            <button class="button clear-chat-button">Clear Chat</button>
+            <ul>Example Case 1</ul>
+            <ul>Example Case 2</ul>
+            <ul>Example Case 3</ul>
+            <ul>Example Case 4</ul>
+            <ul>Example Case 5</ul>
+        </div>
+        <div class="chatbot">
+            <div class="chat-container">
+                <div class="chat-messages">
+                    <h2 class="chat-header">Welcome to Business Compass</h2>
+                    <div class="message">
+                        <div class="message-sender purple-bg">U</div>
+                        <div class="message-text"></div>
+                        <!-- I operate a business that specializes in selling bananas. Our operational expenses consist of employee salaries, which amount to $100,000 per person, and we currently employ 10 individuals. Additionally, we incur an annual cost of $8,000 for fan and air conditioning systems. Furthermore, the total cost associated with growing, processing, and packaging a single banana is $0.50, and the cost to deliver one banana is $1. To determine the selling price required to break even in the second year, we need to calculate our total costs and then divide by the number of bananas we anticipate selling. -->
+                        <div class="message-timestamp">10:30 AM</div>
+                    </div>
+                    <div class="message">
+                        <div class="message-sender blue-bg">BC</div>
+                        <div class="message-text"></div>
+                        <!-- First, let's calculate the total annual expenses, which include employee salaries ($100,000 x 10 = $1,000,000) and the cost of fan and air conditioning systems ($8,000), resulting in total annual expenses of $1,008,000. Now, let's examine the cost per banana, comprising the production and packaging cost of one banana at $0.50 and the delivery cost of $1.00, adding up to a total cost per banana of $1.50. To determine the number of bananas needed to break even in the second year, divide the total annual expenses by the cost per banana: $1,008,000 (Total Annual Expenses) divided by $1.50 (Cost per Banana) equals approximately 672,000 bananas. Therefore, you would need to sell around 672,000 bananas at a price equal to or greater than $1.50 each in the second year to achieve a break-even point. -->
+                        <div class="message-timestamp">10:35 AM</div>
+                    </div>
+                </div>
+            </div>
+            <button class="button regenerate">Regenerate</button>
+            <form class="chat-input-form">
+                <input type="text" class="chat-input" required placeholder="Type here, User..." />
+                <button type="submit" class="button send-button">Generate!</button>
+            </form>
+            
+        </div>
+    </div>
+
+
+
+    
+    
+
+    <!-- <script src="{{ url_for('static', filename='casesolver.js') }}"></script> -->
+
+{% endblock %}
